@@ -16,7 +16,7 @@ const dispatch = useDispatch();
 useEffect(() => {
     const getUsers = async () => {
         try {
-            const res = await axios.get(`https://mern-ecommerce-app-clqa.onrender.com/users/`)
+            const res = await axios.get(`https://ecommerce-mern-icj2.onrender.com/users/`)
             if (res.status === 200) {
                 const data = res.data;
                 dispatch(getClientSuccess(data))
@@ -34,7 +34,7 @@ useEffect(() => {
 
     const handleDelete = async (id) => {
     try {
-        const res = await axios.delete(`https://mern-ecommerce-app-clqa.onrender.com/users/${id}`)
+        const res = await axios.delete(`https://ecommerce-mern-icj2.onrender.com/users/${id}`)
         if (res.status === 200) {
             console.log("Product successfully deleted")
             dispatch (deleteClientSuccess(id));

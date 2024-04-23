@@ -85,7 +85,7 @@ const NewProduct = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get("https://mern-ecommerce-app-clqa.onrender.com/products");
+                const response = await axios.get("https://ecommerce-mern-icj2.onrender.com/products");
                 const products = response.data;
                 products.forEach((product) => dispatch(addProductSuccess(product)));
             } catch (error) {
