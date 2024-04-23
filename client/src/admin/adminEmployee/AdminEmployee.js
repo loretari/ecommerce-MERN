@@ -38,7 +38,7 @@ const handleSubmit = async (e) => {
                 role,
                 salary,
             };
-            const response = await axios.put(`https://mern-ecommerce-app-clqa.onrender.com/admin/employee/${employeeId}`, employeeData);
+            const response = await axios.put(`https://ecommerce-mern-icj2.onrender.com/admin/employee/${employeeId}`, employeeData);
 
             const updatedEmployee = response.data;
             console.log(updatedEmployee);

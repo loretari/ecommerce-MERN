@@ -20,7 +20,7 @@ const Register = () => {
         e.preventDefault()
 
         try {
-            const res = await fetch(`https://mern-ecommerce-app-clqa.onrender.com/auth/register`, {
+            const res = await fetch(`https://ecommerce-mern-icj2.onrender.com/auth/register`, {
                 headers: {
                     'Content-Type': 'application/json'
                 },

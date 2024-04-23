@@ -24,7 +24,7 @@ const Product = () => {
     useEffect(() => {
            const getProduct = async () => {
         try {
-            const res = await axios.get(`https://mern-ecommerce-app-clqa.onrender.com/products/find/`+ id)
+            const res = await axios.get(`https://ecommerce-mern-icj2.onrender.com/products/find/`+ id)
             console.log("Response:", res);
             console.log("Response data:", res.data);
 

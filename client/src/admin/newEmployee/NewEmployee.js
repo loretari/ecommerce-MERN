@@ -33,7 +33,7 @@ const NewEmployee = () => {
                     salary,
                 }
 
-                const response = await axios.post("https://mern-ecommerce-app-clqa.onrender.com/admin/employee", employeeData);
+                const response = await axios.post("https://ecommerce-mern-icj2.onrender.com/admin/employee", employeeData);
 
                 const employee = response.data;
                 dispatch(addEmployeeSuccess (employee));

@@ -21,7 +21,7 @@ const AdminLogin = () => {
         e.preventDefault();
 
         try {
-            const res = await fetch(`https://mern-ecommerce-app-clqa.onrender.com/auth/login`, {
+            const res = await fetch(`https://ecommerce-mern-icj2.onrender.com/auth/login`, {
                 headers: {
                     'Content-Type': 'application/json'
 

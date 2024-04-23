@@ -38,7 +38,7 @@ const handleSubmit = async (e) => {
             const formData = new FormData();
             formData.append("avatar", avatar);
 
-            const uploadResponse = await axios.post("https://mern-ecommerce-app-clqa.onrender.com/upload/avatar", formData);
+            const uploadResponse = await axios.post("https://ecommerce-mern-icj2.onrender.com/upload/avatar", formData);
 
             if (!uploadResponse.data || !uploadResponse.data.avatar_url) {
                 throw new Error("Avatar URL is not provided in the response");
@@ -48,7 +48,7 @@ const handleSubmit = async (e) => {
         }
 
 
-        const response = await axios.put(`https://mern-ecommerce-app-clqa.onrender.com/users/${userId}`, userData );
+        const response = await axios.put(`https://ecommerce-mern-icj2.onrender.com/users/${userId}`, userData );
         const updatedUser = response.data
         console.log(updatedUser)
 

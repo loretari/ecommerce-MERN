@@ -21,7 +21,7 @@ const OAuth =() => {
 
             const result = await signInWithPopup(auth, provider);
 
-            const res = await fetch(`https://mern-ecommerce-app-clqa.onrender.com/auth/google`, {
+            const res = await fetch(`https://ecommerce-mern-icj2.onrender.com/auth/google`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

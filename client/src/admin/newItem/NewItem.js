@@ -42,7 +42,7 @@ const NewItem = () => {
       formData.append("inStock", inStock)
 
       const uploadResponse = await axios.post(
-        "https://mern-ecommerce-app-clqa.onrender.com/upload/image",
+        "https://ecommerce-mern-icj2.onrender.com/upload/image",
         formData
       )
 
@@ -59,7 +59,7 @@ const NewItem = () => {
         inStock,
       }
 
-      const response = await axios.post("https://mern-ecommerce-app-clqa.onrender.com/item", itemData)
+      const response = await axios.post("https://ecommerce-mern-icj2.onrender.com/item", itemData)
 
       const item = response.data
       console.log(item)

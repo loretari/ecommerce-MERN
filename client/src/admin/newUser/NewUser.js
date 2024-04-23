@@ -42,7 +42,7 @@ const NewUser = () => {
             formData.append("password", password);
             formData.append("isAdmin", isAdmin);
 
-            const uploadResponse = await axios.post("https://mern-ecommerce-app-clqa.onrender.com/upload/avatar", formData);
+            const uploadResponse = await axios.post("https://ecommerce-mern-icj2.onrender.com/upload/avatar", formData);
 
             if (!uploadResponse.data || !uploadResponse.data.avatar_url) {
                 throw new Error("Image URL is not provided in the response")
@@ -56,7 +56,7 @@ const NewUser = () => {
                 isAdmin,
             };
 
-            const response = await axios.post("https://mern-ecommerce-app-clqa.onrender.com/users/saveUser", userData);
+            const response = await axios.post("https://ecommerce-mern-icj2.onrender.com/users/saveUser", userData);
 
             const user = response.data;
 

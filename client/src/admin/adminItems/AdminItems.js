@@ -21,7 +21,7 @@ const AdminItems = () =>  {
         const getItems = async () => {
 
             try {
-                const res = await axios.get(`https://mern-ecommerce-app-clqa.onrender.com/item`)
+                const res = await axios.get(`https://ecommerce-mern-icj2.onrender.com/item`)
 
                 if (res.status === 200) {
                     const data = res.data;
@@ -40,7 +40,7 @@ const AdminItems = () =>  {
 
     const handleDelete = async (id) => {
         try {
-            const res = await axios.delete(`https://mern-ecommerce-app-clqa.onrender.com/item/${id}`)
+            const res = await axios.delete(`https://ecommerce-mern-icj2.onrender.com/item/${id}`)
             if (res.status === 200) {
                 console.log("Items successfully deleted")
                 dispatch(deleteItemSuccess(id));

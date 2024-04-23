@@ -46,7 +46,7 @@ const AdminProduct = () => {
                     const formData = new FormData();
                     formData.append("image", image);
 
-                    const uploadResponse = await axios.post("https://mern-ecommerce-app-clqa.onrender.com/upload/image", formData);
+                    const uploadResponse = await axios.post("https://ecommerce-mern-icj2.onrender.com/upload/image", formData);
 
                     if (!uploadResponse.data || !uploadResponse.data.image_url) {
                         throw new Error("Image URL is not provided in the response");
@@ -56,7 +56,7 @@ const AdminProduct = () => {
                 }
 
                 const response = await axios.put(
-                    `https://mern-ecommerce-app-clqa.onrender.com/products/${productId}`, productData);
+                    `https://ecommerce-mern-icj2.onrender.com/products/${productId}`, productData);
                const updatedProduct = response.data
 
 
