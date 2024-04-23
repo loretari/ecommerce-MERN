@@ -29,14 +29,8 @@ mongoose
 
 
 app.use(cors({
-    origin: function (origin, callback) {
-        if (origin === 'https://eclectic-duckanoo-a18e26.netlify.app' || origin === 'https://curious-chebakia-040e2f.netlify.app') {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    credentials: true
+    origin: 'https://eclectic-duckanoo-a18e26.netlify.app',
+    credentials: true,
     optionsSuccessStatus: 200,
 }))
 
