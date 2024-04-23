@@ -1,0 +1,33 @@
+.adminLogin-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+    ),       url("../../../Assets/register.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.adminLogin-login {
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.adminLogin-input {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.adminLogin-button {
+    padding: 10px;
+    width: 100px;
+}
+.login-error {
+    color: red
+}
+

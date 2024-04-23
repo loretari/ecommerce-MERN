@@ -1,0 +1,81 @@
+.register-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+    ),       url("../../Assets/register.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.register-wrapper {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    border-radius:50px;
+}
+
+.register-tittle {
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register-form {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.register-input {
+    flex: 1;
+    min-width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius:10px;
+}
+
+.register-button {
+    width: 80%;
+    border: none;
+    padding: 10px 20px;
+    background-color: #54aaeb;
+    border-radius:20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.register-button:hover {
+    opacity: 45%;
+}
+
+.register-link {
+    padding: 10px;
+    margin: 5px 0px;
+    /*font-size: 12px;*/
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+
+}
+.register-error {
+    color: red
+}
+
+@media screen and (max-width: 670px) {
+    .register-wrapper {
+        width: 50%;
+        padding: 20px;
+        background-color: white;
+        border-radius:50px;
+    }
+}

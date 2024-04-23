@@ -1,0 +1,30 @@
+.container {
+    flex-wrap: wrap;
+
+}
+
+.homeContainer {
+    display: flex;
+    margin: 30px;
+
+}
+
+.containerLeft {
+    padding: 20px;
+    flex: 20%;
+}
+.containerRight{
+    padding: 20px;
+    flex: 30%;
+}
+
+.containerWelcome {
+    margin: 20px;
+}
+
+
+.containerCenter {
+    padding: 20px;
+    flex: 50%;
+}
+

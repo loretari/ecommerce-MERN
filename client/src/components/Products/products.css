@@ -1,0 +1,17 @@
+.products-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width: 670px) {
+    .products-container {
+        display:block;
+        position:relative;
+        padding-bottom:50%;
+        overflow:hidden;
+        /*border-radius: 5px;*/
+    }
+}

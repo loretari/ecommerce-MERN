@@ -1,0 +1,12 @@
+.lineUp {
+    animation: 2s anim-lineUp ease-out;
+}
+
+#tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: silver;
+    font-size: 50px;
+    font-weight: bold;
+}

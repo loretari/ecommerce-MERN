@@ -1,0 +1,17 @@
+.oauth-button {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    background-color: red;
+    border-radius:20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.oauth-button:hover {
+    opacity: 45%;
+}
+.register-error {
+    color: red
+}
