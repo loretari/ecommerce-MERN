@@ -26,18 +26,17 @@ mongoose
         })
     })
 
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://eclectic-duckanoo-a18e26.netlify.app');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    next();
-});
 
 
 app.use(cors({
-    origin: 'https://eclectic-duckanoo-a18e26.netlify.app',
-    credentials: true,
+    origin: function (origin, callback) {
+        if (origin === 'https://eclectic-duckanoo-a18e26.netlify.app' || origin === 'https://curious-chebakia-040e2f.netlify.app') {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    credentials: true
     optionsSuccessStatus: 200,
 }))
 
