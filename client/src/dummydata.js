@@ -24,7 +24,7 @@ export const sliderItems = [
         id: 2,
         img: Fashion2,
         title: "Made with love",
-        desc: "Discover a curated collection of women's clothing to update your wardrobe. From effortless dresses to cosy knitwear and everyday basics.",
+        desc: "Discover a curated collection of women's clothing to update your wardrobe.",
     },
     {
         id: 3,
