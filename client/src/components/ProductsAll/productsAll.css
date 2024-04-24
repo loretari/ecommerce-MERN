@@ -1,0 +1,43 @@
+.products-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.shop-title {
+    margin: 20px;
+    justify-content:center;
+    align-items:center;
+}
+
+.shop-filterContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-filter {
+    margin: 20px;
+}
+
+.shop-filterText {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.shop-select {
+    padding: 10px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 670px) {
+    .products-container {
+        display:block;
+        position:relative;
+        padding-bottom:50%;
+        overflow:hidden;
+
+    }
+}

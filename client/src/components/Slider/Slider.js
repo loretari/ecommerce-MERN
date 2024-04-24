@@ -44,7 +44,7 @@ const Slider = () => {
                             <h1 className= "slider-title">{item.title}</h1>
                             <p className= "slider-description">{item.desc}</p>
 
-                            <Link to={`/products/Clothing`}>
+                            <Link to={`/products`}>
                                 <button className= "slider-button">SHOP NOW</button>
                             </Link>
 

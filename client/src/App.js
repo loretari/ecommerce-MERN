@@ -24,6 +24,7 @@ import NewEmployee from "./admin/newEmployee/NewEmployee";
 import AdminItems from "./admin/adminItems/AdminItems";
 import AdminItem from "./admin/adminItem/AdminItem";
 import NewItem from "./admin/newItem/NewItem";
+import ProductsAll from "./components/ProductsAll/ProductsAll";
 
 
 
@@ -42,6 +43,7 @@ function App() {
         <ToastContainer />
         <Routes>
           <Route index path= "/" element= {<Homepage/>}/>
+            <Route path= "/products" element={<ProductsAll/>}
             <Route path= "/products/:category" element={<ProductList />} />
             <Route path= "/product/:id" element={<Product />} />
             <Route path= "/login" element= {<Login />}/>
