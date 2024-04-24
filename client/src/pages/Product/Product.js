@@ -58,7 +58,7 @@ const Product = () => {
         <div>
             <Navbar />
         <div style={{ background: "#c5f0fc" }}>
-      <Link to="/products/:category">
+      <Link to="/">
         <KeyboardBackspaceOutlinedIcon />
         </Link>
          </div>
