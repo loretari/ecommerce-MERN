@@ -49,7 +49,7 @@ const ProductsAll = () => {
             <Navbar />
 
             <div style={{ background: "#c5f0fc" }}>
-                <Link to="/">
+                <Link to="/products">
                     <KeyboardBackspaceOutlinedIcon />
                 </Link>
             </div>
@@ -63,7 +63,7 @@ const ProductsAll = () => {
                             value={sortCriteria}
                             onChange={handleSortChange} >
                         <option value= "newest">Newest</option>
-                        <option value = "acs">Price (lowest - highest)</option>
+                        <option value = "asc">Price (lowest - highest)</option>
                         <option value= "desc">Price (highest - lowest)</option>
                     </select>
                 </div>

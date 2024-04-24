@@ -19,7 +19,7 @@ const ProductList = () => {
             <Navbar />
 
             <div style={{ background: "#c5f0fc" }}>
-                <Link to="/">
+                <Link to="/products/:category">
                     <KeyboardBackspaceOutlinedIcon />
                 </Link>
             </div>
@@ -34,7 +34,7 @@ const ProductList = () => {
                             value={sort}
                             onChange={(e) => setSort(e.target.value)} >
                         <option value= "newest">Newest</option>
-                        <option value = "acs">Price (lowest - highest)</option>
+                        <option value = "asc">Price (lowest - highest)</option>
                         <option value= "desc">Price (highest - lowest)</option>
                     </select>
                 </div>
